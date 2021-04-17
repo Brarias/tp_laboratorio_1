@@ -28,13 +28,15 @@ int main()
 
     int num1;
     int num2;
-
-
     int flagOpcion1 = 0;
     int flagOpcion2 = 0;
     int flagOpcion3 = 0;
-
-
+    int resMultiplicacion;
+    int resSuma;
+    int resResta;
+    int resFactorialA;
+    int resFactorialB;
+    float resDivision;
     char salir = 'n';
 
     do
@@ -70,18 +72,18 @@ int main()
             if(flagOpcion1 && flagOpcion2)
             {
 
-                suma(num1, num2);
+               resSuma = suma(num1, num2);
 
-                resta(num1, num2);
+                resResta = resta(num1, num2);
 
-                division(num1, num2);
-
-
-                multiplicacion(num1, num2);
+               resDivision = division(num1, num2);
 
 
-                factorial(num1);
-                factorial(num2);
+                 resMultiplicacion = multiplicacion(num1, num2);
+
+
+               resFactorialA = factorial(num1);
+               resFactorialB = factorial(num2);
 
                 flagOpcion3 = 1;
 
@@ -103,18 +105,18 @@ int main()
             if(flagOpcion3)
             {
 
-                printf("a) El resultado de A+B es: %d\n", suma(num1, num2));
-                printf("b) El resultado de A-B es: %d\n", resta(num1, num2));
+                printf("a) El resultado de A+B es: %d\n", resSuma);
+                printf("b) El resultado de A-B es: %d\n", resResta);
                 if(num2 != 0)
                 {
-                    printf("c) El resultado de A/B es: %.2f\n", division(num1, num2));
+                    printf("c) El resultado de A/B es: %.2f\n", resDivision);
                 }
                 else
                 {
                     printf("No es posible dividir por cero\n");
                 }
-                printf("d) El resultado de A*B es: %d\n", multiplicacion(num1, num2));
-                printf("e) El factorial de A es: %d y El factorial de B es: %d\n", factorial(num1), factorial(num2));
+                printf("d) El resultado de A*B es: %d\n", resMultiplicacion);
+                printf("e) El factorial de A es: %d y El factorial de B es: %d\n", resFactorialA, resFactorialB);
 
                 system("pause");
 
