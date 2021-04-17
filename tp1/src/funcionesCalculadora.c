@@ -1,9 +1,4 @@
-/*
- * funcionesCalculadora.c
- *
- *  Created on: 17 abr. 2021
- *      Author: Braian
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
