@@ -4,6 +4,16 @@
 #define FUNCIONESCALCULADORA_H_
 
 
+/** \brief menu de opciones que retorna un entero de la seleccion
+ *
+ * \param flagNum1 int  entero que muestra un estado del flujo de la funcion
+ * \param fladNum2 int  entero que muestra un estado del flujo de la funcion
+ * \param operando1 entero utilizado para mostrarlo
+ * \param operando2 entero utilizado para mostrarlo
+ * \return int devuelve la opcion en entero elegida por el usuario
+ *
+ */
+
 int menu(int flagNum1, int flagNum2, int operando1, int operando2);
 
 /** \brief suma 2 enteros y retorna el resultado
